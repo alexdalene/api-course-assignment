@@ -1,0 +1,22 @@
+.navbar {
+    font-size: 1.4rem;
+    min-width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: $bg-main-color;
+
+
+    ul {
+        justify-content: space-around;
+        min-width: 100%;
+        margin: $margin-lg 0;
+        li > a > div{
+            gap: 0.5rem;
+        }
+    }
+
+    .navbar-icon {
+        font-size: 2.5rem;
+    }
+}

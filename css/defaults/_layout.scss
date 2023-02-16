@@ -1,0 +1,63 @@
+html {
+    background-color: $bg-main-color;
+    font-size: $font-size;
+    font-family: $font-family;
+    color: $text-color;
+}
+
+body {
+    min-height: 100%;
+    margin: 0 $margin-lg;
+    line-height: 1.5;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #e1e1e1;
+}
+
+.container {
+    margin-top: 4rem;
+    gap: 5rem;
+    align-items: center;
+
+    p {
+        font-size: 1.6rem;
+    }
+}
+
+.hero {
+    margin-top: 2.5rem;
+
+    h1 {
+        font-size: 3rem;
+        font-family: 'Ringbearer';
+        text-align: center;
+    }
+}
+
+.topics-container {
+    gap: 3rem;
+    min-width: 100%;
+
+    .topic {
+        gap: 1rem;
+        min-height: 4.5rem;
+        background-color: $bg-second-color;
+        border-radius: 1rem;
+        box-sizing: border-box;
+        transition: 150ms ease;
+
+        i {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.topic:hover {
+    box-shadow: 0px 0px 5px 0px #a67425;
+}
