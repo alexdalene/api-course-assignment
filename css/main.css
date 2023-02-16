@@ -55,10 +55,11 @@ table {
 }
 
 html {
-  background-color: #171717;
+  background: #1e1f24;
   font-size: 62.5%;
   font-family: "Poppins", sans-serif;
   color: #fff;
+  min-height: 100vh;
 }
 
 body {
@@ -76,51 +77,13 @@ a:hover {
   color: #e1e1e1;
 }
 
-.container {
-  margin-top: 4rem;
-  gap: 5rem;
-  align-items: center;
-}
-.container p {
-  font-size: 1.6rem;
-}
-
-.hero {
-  margin-top: 2.5rem;
-}
-.hero h1 {
-  font-size: 3rem;
-  font-family: "Ringbearer";
-  text-align: center;
-}
-
-.topics-container {
-  gap: 3rem;
-  min-width: 100%;
-}
-.topics-container .topic {
-  gap: 1rem;
-  min-height: 4.5rem;
-  background-color: #1e1e1e;
-  border-radius: 1rem;
-  box-sizing: border-box;
-  transition: 150ms ease;
-}
-.topics-container .topic i {
-  font-size: 1.5rem;
-}
-
-.topic:hover {
-  box-shadow: 0px 0px 5px 0px #a67425;
-}
-
 .navbar {
   font-size: 1.4rem;
   min-width: 100%;
   position: fixed;
   bottom: 0;
   left: 0;
-  background-color: #171717;
+  background-color: #1e1f24;
 }
 .navbar ul {
   justify-content: space-around;
@@ -154,9 +117,132 @@ a:hover {
 
 .footer {
   min-width: 100%;
-  height: 25vh;
+  height: 20vh;
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #1e1e1e;
+  background-color: #2b2b30;
+}
+
+@media (width <= 600px) {
+  .container {
+    margin-top: 4rem;
+    gap: 5rem;
+    align-items: center;
+  }
+  .container p {
+    font-size: 1.6rem;
+  }
+  .hero {
+    margin-top: 2.5rem;
+  }
+  .hero h1 {
+    font-size: 3rem;
+    font-family: "Ringbearer";
+    text-align: center;
+  }
+  .topics-container {
+    gap: 3rem;
+    min-width: 100%;
+  }
+  .topics-container .topic {
+    gap: 1rem;
+    min-height: 4.5rem;
+    background-color: #2b2b30;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    transition: 150ms ease;
+  }
+  .topics-container .topic i {
+    font-size: 1.5rem;
+  }
+  .topic:hover {
+    box-shadow: 0px 0px 5px 0px #695b8b;
+    background-color: #372f43;
+  }
+}
+@media (width > 600px) and (width < 840px) {
+  .container {
+    gap: 5rem;
+    align-items: center;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 4rem;
+  }
+  .container p {
+    font-size: 1.6rem;
+  }
+  .hero {
+    margin-top: 2.5rem;
+  }
+  .hero h1 {
+    font-size: 3rem;
+    font-family: "Ringbearer";
+    text-align: center;
+  }
+  .topics-container {
+    gap: 3rem;
+    min-width: 100%;
+  }
+  .topics-container .topic {
+    gap: 1rem;
+    min-height: 4.5rem;
+    min-width: 100%;
+    background-color: #2b2b30;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    transition: 150ms ease;
+  }
+  .topics-container .topic i {
+    font-size: 1.5rem;
+  }
+  .topic:hover {
+    box-shadow: 0px 0px 5px 0px #695b8b;
+    background-color: #372f43;
+  }
+}
+@media (width >= 840px) {
+  .container {
+    gap: 5rem;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 4rem;
+  }
+  .container p {
+    font-size: 1.6rem;
+  }
+  .hero {
+    margin-top: 2.5rem;
+  }
+  .hero h1 {
+    font-size: 3rem;
+    font-family: "Ringbearer";
+    text-align: center;
+  }
+  .topics-container {
+    gap: 2.5%;
+    min-width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .topics-container a {
+    width: 100%;
+  }
+  .topics-container .topic {
+    gap: 1rem;
+    min-height: 20rem;
+    min-width: 100%;
+    background-color: #2b2b30;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    transition: 150ms ease;
+  }
+  .topics-container .topic i {
+    font-size: 1.5rem;
+  }
+  .topic:hover {
+    box-shadow: 0px 0px 5px 0px #695b8b;
+    background-color: #372f43;
+  }
 }/*# sourceMappingURL=main.css.map */
