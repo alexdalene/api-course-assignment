@@ -77,28 +77,72 @@ a:hover {
   color: #e1e1e1;
 }
 
-.navbar {
-  font-size: 1.4rem;
-  min-width: 100%;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(43, 43, 48, 0.6);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
+@media (width <= 600px) {
+  .navbar {
+    font-size: 1.4rem;
+    min-width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(43, 43, 48, 0.6);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+  }
+  .navbar ul {
+    justify-content: space-around;
+    min-width: 100%;
+    margin: 2.4rem 0;
+  }
+  .navbar ul li > a > div {
+    gap: 0.5rem;
+  }
+  .navbar .navbar-icon {
+    font-size: 2.5rem;
+  }
 }
-.navbar ul {
-  justify-content: space-around;
-  min-width: 100%;
-  margin: 2.4rem 0;
+@media (width > 600px) and (width < 840px) {
+  .navbar {
+    font-size: 1.4rem;
+    min-width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(43, 43, 48, 0.6);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+  }
+  .navbar ul {
+    justify-content: space-around;
+    min-width: 100%;
+    margin: 2.4rem 0;
+  }
+  .navbar ul li > a > div {
+    gap: 0.5rem;
+  }
+  .navbar .navbar-icon {
+    font-size: 2.5rem;
+  }
 }
-.navbar ul li > a > div {
-  gap: 0.5rem;
+@media (width >= 840px) {
+  .navbar {
+    font-size: 1.4rem;
+    min-width: 100%;
+    top: 0;
+    left: 0;
+  }
+  .navbar ul {
+    justify-content: space-evenly;
+    gap: 2rem;
+    min-width: 100%;
+    margin: 2.4rem 0;
+  }
+  .navbar ul li > a > div {
+    gap: 0.5rem;
+  }
+  .navbar .navbar-icon {
+    font-size: 2.5rem;
+  }
 }
-.navbar .navbar-icon {
-  font-size: 2.5rem;
-}
-
 .flex {
   display: flex;
 }
@@ -281,11 +325,15 @@ a:hover {
     gap: 0.5rem;
     align-items: center;
   }
+  .grid {
+    gap: 0.5rem;
+  }
   .character-button {
     border: none;
     min-width: 100%;
-    margin: 1rem;
+    margin: 1rem 0;
     border-radius: 1rem;
+    box-sizing: border-box;
     color: white;
     background-color: #2b2b30;
     font-size: 3rem;
@@ -304,6 +352,209 @@ a:hover {
     max-width: 100%;
     margin: 0 auto;
     margin-top: 2.4rem;
+  }
+  .filter div > label {
+    font-size: 1.6rem;
+  }
+  .search-container {
+    align-items: center;
+    max-width: 100%;
+    gap: 2rem;
+    justify-content: center;
+  }
+  .search-container input {
+    background-color: #2b2b30;
+    border: none;
+    box-sizing: border-box;
+    padding: 1rem;
+    font-size: 1.6rem;
+    border-radius: 0.5rem;
+    outline: none;
+    color: white;
+    max-width: 100%;
+  }
+  .search-container input:hover, .search-container input :active, .search-container input :focus, .search-container input :checked {
+    background-color: #372f43;
+    box-shadow: 0px 0px 5px 0px #695b8b;
+  }
+  hr {
+    border: none;
+    border-top: 1px solid gray;
+    margin-top: 2.4rem;
+  }
+}
+.loading {
+  font-size: 4rem;
+  animation: 3s infinite rotate;
+  margin: 0 auto;
+  width: -moz-fit-content;
+  width: fit-content;
+  min-height: 100%;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (width > 600px) and (width < 840px) {
+  .character {
+    min-width: 100%;
+    background-color: #2b2b30;
+    height: -moz-fit-content;
+    height: fit-content;
+    border-radius: 1rem;
+    margin: 1rem 0;
+    box-sizing: border-box;
+    padding: 1rem;
+    gap: 1rem;
+  }
+  .character h4 {
+    font-family: "Ringbearer", sans-serif;
+    font-size: 2.4rem;
+  }
+  .character a {
+    color: #9473e0;
+    font-size: 1.2rem;
+  }
+  .character div {
+    gap: 0.5rem;
+    align-items: center;
+  }
+  .grid {
+    gap: 0.5rem;
+  }
+  .character-button {
+    border: none;
+    min-width: 100%;
+    margin: 1rem 0;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    color: white;
+    background-color: #2b2b30;
+    font-size: 3rem;
+  }
+  .character-button:hover, .character-button :active, .character-button :checked, .character-button :focus {
+    background-color: #372f43;
+    box-shadow: 0px 0px 5px 0px #695b8b;
+  }
+  .character-container {
+    min-width: 100%;
+    min-height: 100%;
+    margin-bottom: 12rem;
+  }
+  .filter {
+    gap: 1.5rem;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 2.4rem;
+  }
+  .filter div > label {
+    font-size: 1.6rem;
+  }
+  .search-container {
+    align-items: center;
+    max-width: 100%;
+    gap: 2rem;
+    justify-content: center;
+  }
+  .search-container input {
+    background-color: #2b2b30;
+    border: none;
+    box-sizing: border-box;
+    padding: 1rem;
+    font-size: 1.6rem;
+    border-radius: 0.5rem;
+    outline: none;
+    color: white;
+    max-width: 100%;
+  }
+  .search-container input:hover, .search-container input :active, .search-container input :focus, .search-container input :checked {
+    background-color: #372f43;
+    box-shadow: 0px 0px 5px 0px #695b8b;
+  }
+  hr {
+    border: none;
+    border-top: 1px solid gray;
+    margin-top: 2.4rem;
+  }
+}
+.loading {
+  font-size: 4rem;
+  animation: 3s infinite rotate;
+  margin: 0 auto;
+  width: -moz-fit-content;
+  width: fit-content;
+  min-height: 100%;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (width >= 840px) {
+  .character {
+    min-width: 100%;
+    background-color: #2b2b30;
+    height: -moz-fit-content;
+    height: fit-content;
+    border-radius: 1rem;
+    margin: 1rem 0;
+    box-sizing: border-box;
+    padding: 1rem;
+    gap: 1rem;
+  }
+  .character h4 {
+    font-family: "Ringbearer", sans-serif;
+    font-size: 2.4rem;
+  }
+  .character a {
+    color: #9473e0;
+    font-size: 1.2rem;
+  }
+  .character div {
+    gap: 0.5rem;
+    align-items: center;
+  }
+  .grid {
+    gap: 2.4rem;
+  }
+  .character-button {
+    border: none;
+    min-width: 60%;
+    max-width: 80%;
+    margin: 1rem 0;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    color: white;
+    background-color: #2b2b30;
+    font-size: 3rem;
+  }
+  .character-button:hover, .character-button :active, .character-button :checked, .character-button :focus {
+    background-color: #372f43;
+    box-shadow: 0px 0px 5px 0px #695b8b;
+  }
+  .grid {
+    justify-items: end;
+  }
+  .character-container {
+    min-width: 100%;
+    min-height: 100%;
+    margin-bottom: 12rem;
+  }
+  .filter {
+    gap: 1.5rem;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 2.4rem;
+    align-items: flex-start;
   }
   .filter div > label {
     font-size: 1.6rem;
