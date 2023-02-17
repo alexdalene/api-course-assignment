@@ -57,15 +57,13 @@
 @media (width >= 840px) {
     .navbar {
         font-size: 1.4rem;
-        width: 10rem;
-        position: fixed;
-        top: calc(100% / 3);
+        min-width: 100%;
+        top: 0;
         left: 0;
     
     
         ul {
             justify-content: space-evenly;
-            flex-direction: column;
             gap: 2rem;
             min-width: 100%;
             margin: $margin-lg 0;
