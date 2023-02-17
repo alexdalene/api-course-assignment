@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-@import url('../../fonts/RINGM___.TTF');
+
+@font-face {
+    font-family: 'Ringbearer';
+    src: url('../../fonts/RINGM___.TTF') format('truetype');
+  }
 
 $bg-main-color: #1e1f24;
 $bg-second-color: #2b2b30;

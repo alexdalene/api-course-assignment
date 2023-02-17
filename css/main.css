@@ -3,7 +3,6 @@
    License: none (public domain)
 */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
-@import url("../../fonts/RINGM___.TTF");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -54,6 +53,10 @@ table {
   border-spacing: 0;
 }
 
+@font-face {
+  font-family: "Ringbearer";
+  src: url("../../fonts/RINGM___.TTF") format("truetype");
+}
 html {
   background: #1e1f24;
   font-size: 62.5%;
