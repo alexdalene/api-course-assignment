@@ -5,7 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/210805fa05.js"
+      crossorigin="anonymous"
+    ></script>
     <title>LotR - Characters</title>
   </head>
-  <body></body>
+  <body>
+    <nav class="navbar flex">
+      <ul class="flex">
+        <li>
+          <a href="./index.html">
+            <div class="flex-col flex-center">
+              <i class="fa-solid fa-house navbar-icon"></i>
+              <p>Home</p>
+            </div></a
+          >
+        </li>
+        <li>
+          <a href="./pages/characters.html">
+            <div class="flex-col flex-center">
+              <i class="fa-solid fa-person navbar-icon"></i>
+              <p>Characters</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="./pages/races.html">
+            <div class="flex-col flex-center">
+              <i class="fa-solid fa-flag navbar-icon"></i>
+              <p>Races</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="./pages/locations.html">
+            <div class="flex-col flex-center">
+              <i class="fa-solid fa-location-dot navbar-icon"></i>
+              <p>Locations</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <main class="container">
+      <section class="hero"><h1>Characters</h1></section>
+      <section class="filter flex-col">
+        <div class="flex search-container">
+          <label for="search-input"
+            ><i class="fa-solid fa-magnifying-glass"></i
+          ></label>
+          <input type="text" id="search-input" placeholder="Character" />
+        </div>
+      </section>
+      <hr />
+      <section class="character-container">
+        <div class="character flex-col">
+          <h4>Legolas</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem fuga
+            ad impedit sit iure incidunt dolorum modi cum quam nesciunt, velit
+            placeat doloremque provident, optio molestiae amet, ullam dolore
+            voluptatibus!
+          </p>
+          <img src="" alt="Image of character." />
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

@@ -1,0 +1,63 @@
+@media (width <= 600px) {
+    .character {
+        min-width: 100%;
+        background-color: $bg-second-color;
+        height: fit-content;
+        border-radius: 1rem;
+        margin: 1rem 0;
+        box-sizing: border-box;
+        padding: 1rem;
+        gap: 1rem;
+
+        h4 {
+            font-family: 'Ringbearer', sans-serif;
+            font-size: 2.4rem;
+        }
+    }
+    
+    .character-container {
+        min-width: 100%;
+        min-height: 100%;
+    }
+    
+    .filter {
+        gap: 1.5rem;
+        max-width: 100%;
+        margin: 0 auto;
+        margin-top: $margin-lg;
+    
+        div > label {
+            font-size: 1.6rem;
+        }
+    }
+    
+    .search-container {
+        align-items: center;
+        max-width: 100%;
+        gap: 2rem;
+        justify-content: center;
+    
+        input {
+            background-color: $bg-second-color;
+            border: none;
+            box-sizing: border-box;
+            padding: 1rem;
+            font-size: 1.6rem;
+            border-radius: 0.5rem;
+            outline: none;
+            color: white;
+            max-width: 100%;
+    
+            &:hover,:active,:focus,:checked {
+                background-color: #372f43;
+                box-shadow: 0px 0px 5px 0px #695b8b;
+            }
+        }
+    }
+    
+    hr {
+        border: none;
+        border-top: 1px solid gray;
+        margin-top: $margin-lg;
+    }
+}
