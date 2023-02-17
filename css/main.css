@@ -71,15 +71,6 @@ body {
   line-height: 1.5;
 }
 
-a {
-  color: white;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #e1e1e1;
-}
-
 @media (width <= 600px) {
   .navbar {
     font-size: 1.4rem;
@@ -299,6 +290,15 @@ a:hover {
     background-color: #372f43;
   }
 }
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #e1e1e1;
+}
+
 @media (width <= 600px) {
   .character {
     min-width: 100%;
