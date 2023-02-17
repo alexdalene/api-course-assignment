@@ -4,7 +4,9 @@
     position: fixed;
     bottom: 0;
     left: 0;
-    background-color: $bg-main-color;
+    background-color: rgba($bg-second-color, $alpha: 0.6);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
 
 
     ul {

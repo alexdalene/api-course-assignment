@@ -13,11 +13,37 @@
             font-family: 'Ringbearer', sans-serif;
             font-size: 2.4rem;
         }
+
+        a {
+            color: #9473e0;
+            font-size: 1.2rem;
+        }
+
+        div {
+            gap: 0.5rem;
+            align-items: center;
+        }
     }
+
+.character-button {
+        border: none;
+        min-width: 100%;
+        margin: 1rem;
+        border-radius: 1rem;
+        color: white;
+        background-color: $bg-second-color;
+        font-size: 3rem;
+
+        &:hover,:active,:checked,:focus {
+            background-color: #372f43;
+            box-shadow: 0px 0px 5px 0px #695b8b;
+        }
+}
     
     .character-container {
         min-width: 100%;
         min-height: 100%;
+        margin-bottom: 12rem;
     }
     
     .filter {
@@ -59,5 +85,22 @@
         border: none;
         border-top: 1px solid gray;
         margin-top: $margin-lg;
+    }
+}
+
+.loading {
+    font-size: 4rem;
+    animation: 3s infinite rotate;
+    margin: 0 auto;
+    width: fit-content;
+    min-height: 100%;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
     }
 }

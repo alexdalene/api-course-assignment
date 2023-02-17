@@ -83,7 +83,9 @@ a:hover {
   position: fixed;
   bottom: 0;
   left: 0;
-  background-color: #1e1f24;
+  background-color: rgba(43, 43, 48, 0.6);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
 }
 .navbar ul {
   justify-content: space-around;
@@ -113,6 +115,15 @@ a:hover {
 
 .hidden {
   display: none;
+}
+
+.shown {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
 }
 
 .footer {
@@ -262,9 +273,31 @@ a:hover {
     font-family: "Ringbearer", sans-serif;
     font-size: 2.4rem;
   }
+  .character a {
+    color: #9473e0;
+    font-size: 1.2rem;
+  }
+  .character div {
+    gap: 0.5rem;
+    align-items: center;
+  }
+  .character-button {
+    border: none;
+    min-width: 100%;
+    margin: 1rem;
+    border-radius: 1rem;
+    color: white;
+    background-color: #2b2b30;
+    font-size: 3rem;
+  }
+  .character-button:hover, .character-button :active, .character-button :checked, .character-button :focus {
+    background-color: #372f43;
+    box-shadow: 0px 0px 5px 0px #695b8b;
+  }
   .character-container {
     min-width: 100%;
     min-height: 100%;
+    margin-bottom: 12rem;
   }
   .filter {
     gap: 1.5rem;
@@ -301,4 +334,47 @@ a:hover {
     border-top: 1px solid gray;
     margin-top: 2.4rem;
   }
+}
+.loading {
+  font-size: 4rem;
+  animation: 3s infinite rotate;
+  margin: 0 auto;
+  width: -moz-fit-content;
+  width: fit-content;
+  min-height: 100%;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.specific-character {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6rem;
+  gap: 1rem;
+  align-items: center;
+  text-align: center;
+}
+.specific-character a {
+  color: #9473e0;
+}
+
+#back {
+  background-color: #2b2b30;
+  border: none;
+  box-sizing: border-box;
+  padding: 1rem;
+  border-radius: 1rem;
+  min-width: 30%;
+  max-width: 40%;
+  font-size: 1.6rem;
+}
+#back:hover, #back :active, #back :checked, #back :focus {
+  background-color: #372f43;
+  box-shadow: 0px 0px 5px 0px #695b8b;
 }/*# sourceMappingURL=main.css.map */
