@@ -126,12 +126,14 @@ a:hover {
 @media (width >= 840px) {
   .navbar {
     font-size: 1.4rem;
-    min-width: 100%;
-    top: 0;
+    width: 10rem;
+    position: fixed;
+    top: 33.3333333333%;
     left: 0;
   }
   .navbar ul {
     justify-content: space-evenly;
+    flex-direction: column;
     gap: 2rem;
     min-width: 100%;
     margin: 2.4rem 0;
@@ -163,11 +165,6 @@ a:hover {
 
 .shown {
   display: flex;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
 }
 
 .footer {
@@ -325,8 +322,18 @@ a:hover {
     gap: 0.5rem;
     align-items: center;
   }
-  .grid {
-    gap: 0.5rem;
+  .character-grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+    margin: 0 auto;
+    gap: 2.4rem;
+    height: 100%;
+  }
+  .character-grid a {
+    height: 100%;
+    width: 100%;
   }
   .character-button {
     border: none;
@@ -337,6 +344,10 @@ a:hover {
     color: white;
     background-color: #2b2b30;
     font-size: 3rem;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 5rem;
+    padding: 1rem;
   }
   .character-button:hover, .character-button :active, .character-button :checked, .character-button :focus {
     background-color: #372f43;
@@ -424,8 +435,18 @@ a:hover {
     gap: 0.5rem;
     align-items: center;
   }
-  .grid {
-    gap: 0.5rem;
+  .character-grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+    margin: 0 auto;
+    gap: 2.4rem;
+    height: 100%;
+  }
+  .character-grid a {
+    height: 100%;
+    width: 100%;
   }
   .character-button {
     border: none;
@@ -436,6 +457,10 @@ a:hover {
     color: white;
     background-color: #2b2b30;
     font-size: 3rem;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 5rem;
+    padding: 1rem;
   }
   .character-button:hover, .character-button :active, .character-button :checked, .character-button :focus {
     background-color: #372f43;
@@ -523,29 +548,36 @@ a:hover {
     gap: 0.5rem;
     align-items: center;
   }
-  .grid {
-    gap: 2.4rem;
+  .character-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+  }
+  .character-grid a {
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .character-button {
     border: none;
-    min-width: 60%;
-    max-width: 80%;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 5rem;
     margin: 1rem 0;
     border-radius: 1rem;
     box-sizing: border-box;
     color: white;
     background-color: #2b2b30;
     font-size: 3rem;
+    padding: 1rem;
   }
   .character-button:hover, .character-button :active, .character-button :checked, .character-button :focus {
     background-color: #372f43;
     box-shadow: 0px 0px 5px 0px #695b8b;
   }
-  .grid {
-    justify-items: end;
-  }
   .character-container {
-    min-width: 100%;
+    width: 100%;
     min-height: 100%;
     margin-bottom: 12rem;
   }

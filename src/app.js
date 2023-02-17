@@ -25,7 +25,7 @@ getAllCharacters();
 function makeCharacter(character) {
   const container = document.querySelector(".character-container");
   container.innerHTML += `
-    <div class="grid">
+    <div class="character-grid">
         <div class="character flex-col">
             <div class="flex">
                 <h4>${character.name},</h4>
@@ -33,7 +33,11 @@ function makeCharacter(character) {
             </div>
             <a href="${character.wikiUrl}" target="_blank" >Wiki <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
         </div>
-        <button class="character-button"><a href="./details.html?id=${character._id}"><i class="fa-solid fa-circle-info"></i></a></button>
+          <a href="./details.html?id=${character._id}">
+            <div class="character-button flex flex-center">
+              <i class="fa-solid fa-circle-info"></i>
+             </div>
+          </a>
     </div>
     `;
 }

@@ -25,9 +25,20 @@
         }
     }
 
-.grid {
-    gap: 0.5rem;
-}
+    .character-grid {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 80%;
+        margin: 0 auto;
+        gap: 2.4rem;
+        height: 100%;
+
+        a {
+            height: 100%;
+            width: 100%;
+        }
+    }
 
 .character-button {
         border: none;
@@ -38,6 +49,9 @@
         color: white;
         background-color: $bg-second-color;
         font-size: 3rem;
+        height: fit-content;
+        width: 5rem;
+        padding: 1rem;
 
         &:hover,:active,:checked,:focus {
             background-color: #372f43;
@@ -137,9 +151,20 @@
         }
     }
 
-.grid {
-    gap: 0.5rem;
-}
+    .character-grid {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 80%;
+        margin: 0 auto;
+        gap: 2.4rem;
+        height: 100%;
+
+        a {
+            height: 100%;
+            width: 100%;
+        }
+    }
 
 .character-button {
         border: none;
@@ -150,6 +175,9 @@
         color: white;
         background-color: $bg-second-color;
         font-size: 3rem;
+        height: fit-content;
+        width: 5rem;
+        padding: 1rem;
 
         &:hover,:active,:checked,:focus {
             background-color: #372f43;
@@ -249,33 +277,37 @@
         }
     }
 
-.grid {
-    gap: 2.4rem;
+.character-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+
+    a {
+        width: fit-content;
+        height: fit-content;
+    }
 }
 
 .character-button {
         border: none;
-        min-width: 60%;
-        max-width: 80%;
+        height: fit-content;
+        width: 5rem;
         margin: 1rem 0;
         border-radius: 1rem;
         box-sizing: border-box;
         color: white;
         background-color: $bg-second-color;
         font-size: 3rem;
+        padding: 1rem;
 
         &:hover,:active,:checked,:focus {
             background-color: #372f43;
             box-shadow: 0px 0px 5px 0px #695b8b;
         }
 }
-
-.grid {
-    justify-items: end;
-}
     
 .character-container {
-        min-width: 100%;
+        width: 100%;
         min-height: 100%;
         margin-bottom: 12rem;
 }
