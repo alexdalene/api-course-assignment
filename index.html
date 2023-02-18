@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LotR - Home</title>
     <link rel="stylesheet" href="./css/main.css" />
+    <script defer src="./src/observer.js"></script>
     <script
       src="https://kit.fontawesome.com/210805fa05.js"
       crossorigin="anonymous"
@@ -52,27 +53,20 @@
       <section class="hero">
         <h1>The one api to Rule Them All.</h1>
       </section>
-      <div>
-        <p>
-          This is a project for an assignment from school. You will be able to
-          view and search for a lot of things related to
-          <strong>The Lord of the Rings</strong>.
-        </p>
-      </div>
       <section class="topics-container flex-col">
-        <a href="./pages/characters.html">
+        <a href="./pages/characters.html" class="obs-hidden topic-animation">
           <div class="topic flex flex-center">
             <i class="fa-solid fa-person"></i>
             <p>Characters</p>
           </div>
         </a>
-        <a href="./pages/races.html">
+        <a href="./pages/races.html" class="obs-hidden topic-animation">
           <div class="topic flex flex-center">
             <i class="fa-solid fa-flag"></i>
             <p>Races</p>
           </div>
         </a>
-        <a href="./pages/locations.html">
+        <a href="./pages/locations.html" class="obs-hidden topic-animation">
           <div class="topic flex flex-center">
             <i class="fa-solid fa-location-dot"></i>
             <p>Locations</p>

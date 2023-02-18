@@ -26,7 +26,7 @@ async function getCharacter() {
 getCharacter();
 
 function makeCharacter(character) {
-  const hero = document.querySelector(".hero");
+  const hero = document.querySelector(".hero-character");
   hero.innerHTML = `
     <h1>${character.name}</h1>
     `;

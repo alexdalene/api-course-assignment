@@ -251,6 +251,22 @@
 }
 
 @media (width >= 840px) {
+    .hero-character {
+        margin-top: 2.5rem;
+        display: grid;
+        place-items: center;
+        align-content: center;
+        gap: 5rem;
+        margin: 5% 0;
+    
+        h1 {
+            font-size: 5rem;
+            font-family: 'Ringbearer';
+            text-align: center;
+            box-sizing: content-box;
+        }
+    }
+
     .character {
         min-width: 100%;
         background-color: $bg-second-color;
