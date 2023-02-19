@@ -1,0 +1,111 @@
+.form {
+    width: fit-content;
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        input {
+            width: 100%;
+            border: none;
+            border-radius: $border-radius-lg;
+            height: 3rem;
+            background-color: $bg-third-color;
+            outline: none;
+            color: white;
+            box-sizing: border-box;
+            padding: 0.5rem;
+            font-size: $text-size-sm;
+            transition: 150ms ease;
+
+            &:hover,&:active,&:checked,&:focus {
+                background-color: #3e3e4e;
+            }
+        }
+        
+        #name-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 2rem;
+
+            div {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                gap: 0.5rem;
+            }
+        }
+
+        #email-container {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            gap: 2rem;
+
+            div {
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            button {
+                width: 100%;
+                height: 3rem;
+                border-radius: $border-radius-lg;
+                outline: none;
+                border: none;
+                background-color: $button-color;
+                color: white;
+                font-size: $text-size-sm;
+                margin-top: 1rem;
+                transition: 150ms ease;
+
+                &:hover {
+                    background-color: $button-hover;
+                }
+
+                &:disabled {
+                    background-color: $button-disabled;
+                    color: gray;
+                }
+            }
+        }
+    }
+
+    h2 {
+        font-size: $text-size-lg;
+        text-align: center;
+    }
+
+    hr {
+        border: none;
+        border-bottom: 1px solid white;
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .loading-form {
+        font-size: 2rem;
+        animation: 3s infinite rotate;
+        width: 2rem;
+    }
+
+    #submit-button {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+
+        .hide {
+            display: none;
+        }
+    }
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: flex;
+}

@@ -7,53 +7,47 @@
     <title>LotR - Home</title>
     <link rel="stylesheet" href="./css/main.css" />
     <script defer src="./src/observer.js"></script>
+    <script defer src="./src/index.js"></script>
     <script
       src="https://kit.fontawesome.com/210805fa05.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <nav class="navbar flex hidden">
-      <ul class="flex">
-        <li>
-          <a href="./index.html">
-            <div class="flex-col flex-center">
-              <i class="fa-solid fa-house navbar-icon"></i>
-              <p>Home</p>
-            </div></a
-          >
-        </li>
-        <li>
-          <a href="./pages/characters.html">
-            <div class="flex-col flex-center">
-              <i class="fa-solid fa-person navbar-icon"></i>
-              <p>Characters</p>
+    <!-- Main -->
+    <main class="container">
+      <section class="card form">
+        <h2>Sign Up</h2>
+        <hr />
+        <form>
+          <div id="name-container">
+            <div>
+              <label for="first-name-input">First name:</label>
+              <input type="text" id="first-name-input" />
             </div>
-          </a>
-        </li>
-        <li>
-          <a href="./pages/races.html">
-            <div class="flex-col flex-center">
-              <i class="fa-solid fa-flag navbar-icon"></i>
-              <p>Races</p>
+            <div>
+              <label for="last-name-input">Last name:</label>
+              <input type="text" id="last-name-input" />
             </div>
-          </a>
-        </li>
-        <li>
-          <a href="./pages/locations.html">
-            <div class="flex-col flex-center">
-              <i class="fa-solid fa-location-dot navbar-icon"></i>
-              <p>Locations</p>
+          </div>
+          <div id="email-container">
+            <div>
+              <label for="email-input">Email:</label>
+              <input type="text" id="email-input" />
             </div>
-          </a>
-        </li>
-      </ul>
-    </nav>
-    <main class="container flex-col">
-      <section class="hero">
-        <h1>The one api to Rule Them All.</h1>
+            <div>
+              <button type="submit" id="submit-button" disabled>
+                Sign Up
+                <div class="loading-form hide" id="loader">
+                  <i class="fa-solid fa-spinner"></i>
+                </div>
+              </button>
+            </div>
+          </div>
+        </form>
       </section>
-      <section class="topics-container flex-col">
+      <section class="card animate-before" id="welcome"></section>
+      <section class="topics-container hide flex-col">
         <a href="./pages/characters.html" class="obs-hidden topic-animation">
           <div class="topic flex flex-center">
             <i class="fa-solid fa-person"></i>
@@ -74,5 +68,6 @@
         </a>
       </section>
     </main>
+    <!-- / Main -->
   </body>
 </html>

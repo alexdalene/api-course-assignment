@@ -1,0 +1,45 @@
+.card {
+    height: fit-content;
+    width: 100%;
+    box-sizing: border-box;
+    line-height: 1.5;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    border-radius: $border-radius-lg;
+    background-color: $bg-second-color;
+    padding: $margin-lg;
+    font-size: $text-size-sm;
+
+    div {
+        display: grid;
+        gap: 1.5rem;
+
+        h1 {
+            font-size: $text-size-lg;
+            
+            @media (width > 840px) {
+                max-width: 60%;
+            }
+        }
+    
+        p {
+            @media (width > 840px) {
+                max-width: 60%;
+            }
+        }
+    }    
+}
+
+.animate-before {
+    transform: translateY(-100vh);
+    filter: blur(2px);
+    transition: all 1s ease;
+}
+
+.animate-after {
+    transform: translateY(0vh);
+    filter: blur(0px);
+}

@@ -1,0 +1,17 @@
+.container {
+    max-width: 100%;
+    display: grid;
+    place-items: center;
+    gap: $margin-lg;
+
+    @media (width < 600px) {
+        margin: $margin-sm;
+        border-radius: $border-radius-sm;
+    }
+    
+    @media (width >= 600px) {
+        grid-template-columns: repeat(1, 1fr);
+        margin: $margin-lg;
+        border-radius: $border-radius-lg;
+    }
+}
