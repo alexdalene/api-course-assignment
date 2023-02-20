@@ -7,9 +7,9 @@
 
 .obs-hidden {
     opacity: 0;
-    filter: blur(5px);
+    filter: blur(2px);
     transform: translateX(-100%);
-    transition: all 1s;
+    transition: all 1s ease;
 }
 
 .obs-show {
@@ -19,7 +19,7 @@
 }
 
 .topics-container {
-    gap: 1rem;
+    gap: $margin-lg;
     width: 100%;
     flex-direction: row;
     justify-content: space-between;

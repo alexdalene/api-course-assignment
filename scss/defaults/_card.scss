@@ -1,5 +1,5 @@
 .card {
-    height: fit-content;
+    height: 100%;
     width: 100%;
     box-sizing: border-box;
     line-height: 1.5;
@@ -35,11 +35,13 @@
 
 .animate-before {
     transform: translateY(-100vh);
+    opacity: 0;
     filter: blur(2px);
     transition: all 1s ease;
 }
 
 .animate-after {
+    opacity: 1;
     transform: translateY(0vh);
     filter: blur(0px);
 }

@@ -26,18 +26,20 @@ function makeCharacter(character) {
   const container = document.querySelector(".character-container");
   container.innerHTML += `
     <div class="character-grid">
-        <div class="character flex-col">
-            <div class="flex">
-                <h4>${character.name},</h4>
-                <p>${character.race}</p>
-            </div>
-            <a href="${character.wikiUrl}" target="_blank" >Wiki <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-        </div>
+        <ul class="character">
+                <li><h4>${character.name},</h4></li>
+                <li><p>${character.race}</p></li>
+        </ul>
+        <ul>
+        <a href="${character.wikiUrl}" target="_blank" >Wiki <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </ul>
+        <ul>
           <a href="./details.html?id=${character._id}">
             <div class="character-button flex flex-center">
               <i class="fa-solid fa-circle-info"></i>
              </div>
           </a>
+          </ul>
     </div>
     `;
 }
