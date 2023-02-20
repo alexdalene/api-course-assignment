@@ -9,7 +9,7 @@
     gap: $margin-sm;
     font-size: $text-size-sm;
 
-    @media (width <= 600px) {
+    @media (max-width: 600px) {
         background-color: $bg-main-color;
         padding: 0;
     }
@@ -24,11 +24,11 @@
         padding: $padding-sm;
         border-radius: $border-radius-lg;
 
-        @media (width < 840px) {
+        @media (min-width: 840px) {
             max-width: 80%;
         }
 
-        @media (width <= 600px) {
+        @media (max-width: 600px) {
             max-width: 100%;
             background-color: $bg-second-color;
         }
@@ -52,14 +52,14 @@
             gap: 1rem;
             width: 50%;
 
-            @media (width <= 600px) {
+            @media (max-width: 600px) {
                 flex-direction: column;
             }
 
             h4 {
                 font-family: "Ringbearer", sans-serif;
 
-                @media (width >= 840px) {
+                @media (min-width: 840px) {
                     font-size: $text-size-lg;
                 }
             }
@@ -74,7 +74,7 @@
     width: 100%;
     border-radius: $border-radius-lg;
 
-    @media (width <= 600px) {
+    @media (max-width: 600px) {
         background-color: $bg-main-color;
         padding: 0;
     }
@@ -95,7 +95,7 @@
             color: $text-color;
             transition: 150ms ease;
 
-            @media (width <= 600px) {
+            @media (max-width: 600px) {
                 background-color: $bg-second-color;
             }
 

@@ -20,13 +20,13 @@
         h1 {
             font-size: $text-size-lg;
             
-            @media (width > 840px) {
+            @media (min-width: 840px) {
                 max-width: 60%;
             }
         }
     
         p {
-            @media (width > 840px) {
+            @media (min-width: 840px) {
                 max-width: 60%;
             }
         }

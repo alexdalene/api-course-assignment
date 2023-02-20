@@ -174,7 +174,7 @@ html {
   gap: 1.6rem;
   font-size: 1.6rem;
 }
-@media (width <= 600px) {
+@media (max-width: 600px) {
   .character-container {
     background-color: #1e1f24;
     padding: 0;
@@ -190,12 +190,12 @@ html {
   padding: 2.6%;
   border-radius: 1rem;
 }
-@media (width < 840px) {
+@media (min-width: 840px) {
   .character-container .character-grid {
     max-width: 80%;
   }
 }
-@media (width <= 600px) {
+@media (max-width: 600px) {
   .character-container .character-grid {
     max-width: 100%;
     background-color: #2b2b30;
@@ -217,7 +217,7 @@ html {
   gap: 1rem;
   width: 50%;
 }
-@media (width <= 600px) {
+@media (max-width: 600px) {
   .character-container .character-grid .character {
     flex-direction: column;
   }
@@ -225,7 +225,7 @@ html {
 .character-container .character-grid .character h4 {
   font-family: "Ringbearer", sans-serif;
 }
-@media (width >= 840px) {
+@media (min-width: 840px) {
   .character-container .character-grid .character h4 {
     font-size: 2.4rem;
   }
@@ -238,7 +238,7 @@ html {
   width: 100%;
   border-radius: 1rem;
 }
-@media (width <= 600px) {
+@media (max-width: 600px) {
   .filter {
     background-color: #1e1f24;
     padding: 0;
@@ -260,7 +260,7 @@ html {
   color: #fff;
   transition: 150ms ease;
 }
-@media (width <= 600px) {
+@media (max-width: 600px) {
   .filter .search-container input {
     background-color: #2b2b30;
   }
@@ -350,13 +350,13 @@ html {
   place-items: center;
   gap: 2.4rem;
 }
-@media (width < 600px) {
+@media (max-width: 600px) {
   .container {
     margin: 1.6rem;
     border-radius: 0.5rem;
   }
 }
-@media (width >= 600px) {
+@media (min-width: 600px) {
   .container {
     grid-template-columns: repeat(1, 1fr);
     margin: 5.4%;
@@ -384,12 +384,12 @@ html {
 .card div h1 {
   font-size: 2.4rem;
 }
-@media (width > 840px) {
+@media (min-width: 840px) {
   .card div h1 {
     max-width: 60%;
   }
 }
-@media (width > 840px) {
+@media (min-width: 840px) {
   .card div p {
     max-width: 60%;
   }
@@ -558,7 +558,7 @@ html {
   background-color: #372f43;
 }
 
-@media (width < 600px) {
+@media (max-width: 600px) {
   .topics-container {
     flex-direction: column;
   }

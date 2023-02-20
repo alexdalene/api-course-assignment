@@ -3,12 +3,12 @@
     place-items: center;
     gap: $margin-lg;
 
-    @media (width < 600px) {
+    @media (max-width: 600px) {
         margin: $margin-sm;
         border-radius: $border-radius-sm;
     }
     
-    @media (width >= 600px) {
+    @media (min-width: 600px) {
         grid-template-columns: repeat(1, 1fr);
         margin: $padding-lg;
         border-radius: $border-radius-lg;

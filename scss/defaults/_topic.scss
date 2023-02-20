@@ -52,7 +52,7 @@
     }
 }
 
-@media (width < 600px) {
+@media (max-width: 600px) {
     .topics-container {
         flex-direction: column;
 
