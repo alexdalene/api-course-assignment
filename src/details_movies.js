@@ -63,8 +63,8 @@ function makeMovie(movie) {
     </div>
     <div class="awards">
         <p>This series won <br >
-        <strong>${movie.academyAwardNominations} / ${
-      movie.academyAwardWins
+        <strong>${movie.academyAwardWins} / ${
+      movie.academyAwardNominations
     }</strong> <br >
         Academy Award nominations.</p>
     </div>
@@ -86,8 +86,8 @@ function makeMovie(movie) {
     </div>
     <div class="awards">
         <p>This movie won <br >
-        <strong>${movie.academyAwardNominations} / ${
-      movie.academyAwardWins
+        <strong>${movie.academyAwardWins} / ${
+      movie.academyAwardNominations
     }</strong> <br >
         Academy Award nominations.</p>
     </div>
