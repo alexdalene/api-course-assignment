@@ -7,6 +7,8 @@ const welcome = document.querySelector("#welcome");
 const submitButton = document.querySelector("#submit-button");
 const loader = document.querySelector("#loader");
 
+localStorage.clear();
+
 if (localStorage.getItem("firstName")) {
   addUser();
   cardAnimation();

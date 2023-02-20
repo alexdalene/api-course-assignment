@@ -323,9 +323,6 @@ html {
 .filter .race-container details:hover, .filter .race-container details:checked, .filter .race-container details:active, .filter .race-container details:focus {
   background-color: #3e3e4e;
 }
-.filter .race-container details summary {
-  list-style: none;
-}
 .filter .race-container details div {
   margin-top: 0.5rem;
 }
