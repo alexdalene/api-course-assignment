@@ -13,6 +13,10 @@
     border-radius: $border-radius-lg;
     line-height: 1.5;
 
+    @media (max-width: 600px) {
+        width: 100%;
+    }
+
     .scores {
         background-color: $bg-third-color;
         box-sizing: border-box;

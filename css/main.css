@@ -684,6 +684,11 @@ html {
   border-radius: 1rem;
   line-height: 1.5;
 }
+@media (max-width: 600px) {
+  .movie-info {
+    width: 100%;
+  }
+}
 .movie-info .scores {
   background-color: #3b3b41;
   box-sizing: border-box;
