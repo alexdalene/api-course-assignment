@@ -70,13 +70,22 @@
 .filter {
     background-color: $bg-second-color;
     box-sizing: border-box;
-    padding: $padding-lg;
+    padding: 2rem 5.4%;
     width: 100%;
     border-radius: $border-radius-lg;
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    font-size: $text-size-sm;
 
     @media (max-width: 600px) {
         background-color: $bg-main-color;
         padding: 0;
+    }
+
+    @media (max-width: 840px) {
+        flex-direction: column;
+        gap: 2rem;
     }
 
     .search-container {
@@ -108,6 +117,77 @@
             font-size: 1.5rem;
         }
     }
+
+    .race-container {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        font-size: $text-size-sm;
+        box-sizing: border-box;
+
+        div {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            box-sizing: border-box;
+            padding: $padding-sm;
+            border-radius: $border-radius-lg;
+            transition: 150ms ease;
+            
+            &:hover {
+                background-color: #5c5369;
+            }
+        }
+
+        input {
+            appearance: none;
+            width: 1.5rem;
+            height: 1.5rem;
+            background-color: $button-color;
+            border-radius: 50%;
+            margin: 0;
+
+            &:checked {
+                outline: 1px solid $button-color;
+                outline-offset: 3px;
+            }
+        }
+
+        details {
+            background-color: $bg-third-color;
+            box-sizing: border-box;
+            padding: 2rem;
+            border-radius: $border-radius-lg;
+
+            &:hover,&:checked,&:active,&:focus {
+                background-color: #3e3e4e;
+            }
+
+            summary {
+                list-style: none;
+            }
+
+            div {
+                margin-top: 0.5rem;
+            }
+        }
+    }
+
+    button {
+        border: none;
+        box-sizing: border-box;
+        border-radius: $border-radius-lg;
+        background-color: $button-color;
+        color: white;
+        font-size: $text-size-sm;
+        padding: 2rem;
+        transition: 150ms ease;
+        height: 50%;
+
+        &:hover {
+            background-color: $button-hover;
+        }
+    }
 }
 
 #back-icon {
@@ -115,7 +195,7 @@
     color: white;
     place-self: start;
     box-sizing: border-box;
-    padding: $padding-sm;
+    padding: 2rem;
     background-color: $bg-second-color;
     border-radius: $border-radius-lg;
     transition: 150ms ease;

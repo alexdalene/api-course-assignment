@@ -1,8 +1,10 @@
-async function getAllCharacters() {
+async function getAllCharacters(input) {
   try {
+    const container = document.querySelector(".character-container");
+    container.innerHTML = "";
     document.querySelector(".loading").classList.add("shown");
     const response = await fetch(
-      "https://the-one-api.dev/v2/character?limit=20",
+      `https://the-one-api.dev/v2/character?race=${input}`,
       {
         headers: {
           Authorization: "Bearer PsUUdivKcDKJ5XnoSvj5",
@@ -10,17 +12,15 @@ async function getAllCharacters() {
       }
     );
     const result = await response.json();
-    console.log(result.docs);
+    console.log(result);
     result.docs.forEach((character) => makeCharacter(character));
     document.querySelector(".loading").classList.remove("shown");
   } catch (error) {
     console.log(error);
-  } finally {
-    console.log("Working");
   }
 }
 
-getAllCharacters();
+let input;
 
 function makeCharacter(character) {
   const container = document.querySelector(".character-container");
@@ -44,7 +44,27 @@ function makeCharacter(character) {
     `;
 }
 
+const radioOptions = document.querySelectorAll(
+  ".race-container details div input"
+);
+
+const submitButton = document.querySelector("#submit-button");
 const searchInput = document.querySelector("#search-input");
+
+submitButton.addEventListener("click", (e) => {
+  document.querySelector(".character-container").classList.remove("hide");
+  e.preventDefault();
+  document.querySelector(".race-container details").open = false;
+  if (!searchInput.value) {
+    radioOptions.forEach((node) => {
+      if (node.checked) {
+        input = node.value;
+        console.log(input);
+        getAllCharacters(input);
+      }
+    });
+  }
+});
 
 searchInput.addEventListener("change", (e) => {
   console.log(e.target.value);

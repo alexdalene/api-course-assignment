@@ -17,8 +17,8 @@
       <a href="../index.html" id="back-icon"
         ><i class="fa-solid fa-arrow-left"></i
       ></a>
-      <section class="filter">
-        <div class="search-container">
+      <form class="filter">
+        <fieldset class="search-container">
           <label for="search-input"
             ><i class="fa-solid fa-magnifying-glass"></i
           ></label>
@@ -27,9 +27,40 @@
             id="search-input"
             placeholder="Character's full name"
           />
-        </div>
-      </section>
-      <section class="character-container"></section>
+        </fieldset>
+        <h2>OR</h2>
+        <fieldset class="race-container">
+          <details>
+            <summary>
+              Choose a race <i class="fa-solid fa-caret-down"></i>
+            </summary>
+            <div>
+              <input
+                type="radio"
+                id="human"
+                name="race"
+                value="Human"
+                checked
+              />
+              <label for="human">Human</label>
+            </div>
+            <div>
+              <input type="radio" id="elf" name="race" value="Elf" />
+              <label for="elf">Elf</label>
+            </div>
+            <div>
+              <input type="radio" id="orc" name="race" value="Orc" />
+              <label for="orc">Orc</label>
+            </div>
+            <div>
+              <input type="radio" id="hobbit" name="race" value="Hobbit" />
+              <label for="hobbit">Hobbit</label>
+            </div>
+          </details>
+        </fieldset>
+        <button id="submit-button">Search</button>
+      </form>
+      <section class="character-container hide"></section>
       <div class="loading hidden"><i class="fa-solid fa-spinner"></i></div>
     </main>
   </body>

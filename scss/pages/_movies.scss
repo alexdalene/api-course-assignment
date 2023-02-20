@@ -1,0 +1,44 @@
+.hero-movie {
+    font-size: $text-size-lg;
+    font-family: "Ringbearer", sans-serif;
+}
+
+.movie-info {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    gap: 1rem;
+    background-color: $bg-second-color;
+    padding: $padding-sm;
+    border-radius: $border-radius-lg;
+    line-height: 1.5;
+
+    .scores {
+        background-color: $bg-third-color;
+        box-sizing: border-box;
+        padding: $padding-sm;
+        border-radius: $border-radius-lg;
+        display: flex;
+        gap: 3rem;
+        font-size: $text-size-sm;
+        justify-content: center;
+    }
+
+    .revenue {
+        background-color: $bg-third-color;
+        box-sizing: border-box;
+        padding: $padding-sm;
+        border-radius: $border-radius-lg;
+        font-size: $text-size-sm;
+        text-align: center;
+    }
+
+    .awards {
+        background-color: $bg-third-color;
+        box-sizing: border-box;
+        padding: $padding-sm;
+        border-radius: $border-radius-lg;
+        font-size: $text-size-sm;
+        text-align: center;
+    }
+}
