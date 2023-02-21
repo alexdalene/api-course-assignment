@@ -11,32 +11,17 @@ async function getMovie() {
       },
     });
     const result = await response.json();
-    console.log(result);
     result.docs.forEach((movie) => makeMovie(movie));
   } catch (error) {
     console.log(error);
-  } finally {
-    console.log("Working");
+    document.querySelector(".movie-info").innerHTML = "<h1>ERROR</h1>";
   }
 }
 
-// async function getChapters() {
-//   try {
-//     const response = await fetch(
-//       `https://the-one-api.dev/v2/movie/${postId}/chapter`
-//     );
-//     const result = await response.json();
-//     console.log(result);
-//     result.docs.forEach((chapter) => makeChapters(chapter));
-//   } catch (error) {
-//     console.log(error);
-//   }
-// }
-
-// getChapters();
 getMovie();
 
 function makeMovie(movie) {
+  document.title = `LotR - ${movie.name}`;
   const hero = document.querySelector(".hero-movie");
   hero.innerHTML = `
     <h1>${movie.name}</h1>

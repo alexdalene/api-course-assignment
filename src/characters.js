@@ -12,11 +12,11 @@ async function getAllCharacters(input) {
       }
     );
     const result = await response.json();
-    console.log(result);
     result.docs.forEach((character) => makeCharacter(character));
     document.querySelector(".loading").classList.remove("shown");
   } catch (error) {
     console.log(error);
+    document.querySelector(".container").innerHTML += "<h1>ERROR</h1>";
   }
 }
 

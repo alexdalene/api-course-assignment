@@ -11,10 +11,10 @@ async function getBook() {
       },
     });
     const result = await response.json();
-    console.log(result);
     result.docs.forEach((book) => makeBook(book));
   } catch (error) {
     console.log(error);
+    document.querySelector(".chapters").innerHTML = "<h1>ERROR</h1>";
   } finally {
     console.log("Working");
   }
@@ -37,6 +37,7 @@ getChapters();
 getBook();
 
 function makeBook(book) {
+  document.title = `LotR - ${book.name}`;
   const hero = document.querySelector(".hero-book");
   hero.innerHTML = `
     <h1>${book.name}</h1>

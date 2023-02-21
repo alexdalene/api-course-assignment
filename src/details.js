@@ -14,18 +14,17 @@ async function getCharacter() {
       }
     );
     const result = await response.json();
-    console.log(result);
     result.docs.forEach((character) => makeCharacter(character));
   } catch (error) {
     console.log(error);
-  } finally {
-    console.log("Working");
+    document.querySelector(".specific-character").innerHTML = "<h1>ERROR</h1>";
   }
 }
 
 getCharacter();
 
 function makeCharacter(character) {
+  document.title = `LotR - ${character.name}`;
   const hero = document.querySelector(".hero-character");
   hero.innerHTML = `
     <h1>${character.name}</h1>

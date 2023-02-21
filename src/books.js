@@ -7,13 +7,11 @@ async function getAllBooks() {
       },
     });
     const result = await response.json();
-    console.log(result.docs);
     result.docs.forEach((book) => makeBook(book));
     document.querySelector(".loading").classList.remove("shown");
   } catch (error) {
     console.log(error);
-  } finally {
-    console.log("Working");
+    document.querySelector(".character-container").innerHTML = "<h1>ERROR</h1>";
   }
 }
 
