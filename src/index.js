@@ -7,6 +7,8 @@ const welcome = document.querySelector("#welcome");
 const submitButton = document.querySelector("#submit-button");
 const loader = document.querySelector("#loader");
 
+// check if user has signed up before
+
 if (localStorage.getItem("firstName")) {
   addUser();
   cardAnimation();
@@ -39,6 +41,8 @@ if (localStorage.getItem("firstName")) {
   });
 }
 
+// end of check
+
 // Form Validation
 
 document.addEventListener("keyup", (event) => {
@@ -63,6 +67,8 @@ function emailCheck() {
 
 // end of "Form Validation"
 
+// add information from sign-up to page
+
 function addUser(user) {
   loader.classList.add("hide");
   formContainer.classList.add("hide");
@@ -85,6 +91,10 @@ function addUser(user) {
     `;
   }
 }
+
+// end of add information
+
+// some animations and show/hide
 
 function cardAnimation() {
   setTimeout(() => {

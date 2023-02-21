@@ -35,7 +35,7 @@ function makeCharacter(character) {
         <a href="${character.wikiUrl}" target="_blank" >Wiki <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
         </ul>
         <ul>
-          <a href="./details.html?id=${character._id}">
+          <a href="./details_characters.html?id=${character._id}">
             <div class="character-button flex flex-center">
               <i class="fa-solid fa-circle-info"></i>
              </div>
@@ -67,7 +67,6 @@ submitButton.addEventListener("click", (e) => {
 });
 
 searchInput.addEventListener("change", (e) => {
-  console.log(e.target.value);
   getCharacter(e.target.value);
 });
 
@@ -90,10 +89,10 @@ async function getCharacter(value) {
       }
     );
     const result = await response.json();
-    console.log(result);
     result.docs.forEach((character) => makeCharacter(character));
     document.querySelector(".loading").classList.remove("shown");
   } catch (error) {
     console.log(error);
+    document.querySelector(".container").innerHTML += "<h1>ERROR</h1>";
   }
 }
