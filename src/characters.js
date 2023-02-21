@@ -23,6 +23,7 @@ async function getAllCharacters(input) {
 let input;
 
 function makeCharacter(character) {
+  document.querySelector(".character-container").classList.remove("hide");
   const container = document.querySelector(".character-container");
   container.innerHTML += `
     <div class="character-grid">
@@ -52,7 +53,6 @@ const submitButton = document.querySelector("#submit-button");
 const searchInput = document.querySelector("#search-input");
 
 submitButton.addEventListener("click", (e) => {
-  document.querySelector(".character-container").classList.remove("hide");
   e.preventDefault();
   document.querySelector(".race-container details").open = false;
   if (!searchInput.value) {
