@@ -20,8 +20,6 @@ async function getAllCharacters(input) {
   }
 }
 
-let input;
-
 function makeCharacter(character) {
   document.querySelector(".character-container").classList.remove("hide");
   const container = document.querySelector(".character-container");
@@ -58,7 +56,7 @@ submitButton.addEventListener("click", (e) => {
   if (!searchInput.value) {
     radioOptions.forEach((node) => {
       if (node.checked) {
-        input = node.value;
+        let input = node.value;
         console.log(input);
         getAllCharacters(input);
       }
