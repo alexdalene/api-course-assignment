@@ -78,14 +78,14 @@ function addUser(user) {
 
     welcome.innerHTML += `
         <div>
-            <h1>Welcome to a course-assignment project I've been working on, ${firstName} ${lastName}.</h1>
+            <h1>Welcome to a course-assignment project I've been working on, ${firstName}&nbsp;${lastName}.</h1>
             <p>You will be able to see through characters, books and movies from the legendary <strong>The Lord of the Rings</strong> world.</p>
         </div>
     `;
   } else {
     welcome.innerHTML += `
         <div>
-            <h1>Welcome to a course-assignment project I've been working on, <br >${user.firstName} ${user.lastName}.</h1>
+            <h1>Welcome to a course-assignment project I've been working on, <br >${user.firstName}&nbsp;${user.lastName}.</h1>
             <p>You will be able to scroll through characters from <strong>The Lord of the Rings</strong>, check their wiki, get some info about them and also search for a specific character.</p>
         </div>
     `;
