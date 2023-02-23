@@ -7,8 +7,6 @@ const welcome = document.querySelector("#welcome");
 const submitButton = document.querySelector("#submit-button");
 const loader = document.querySelector("#loader");
 
-localStorage.clear();
-
 // check if user has signed up before
 
 if (localStorage.getItem("firstName")) {
