@@ -7,6 +7,8 @@ const welcome = document.querySelector("#welcome");
 const submitButton = document.querySelector("#submit-button");
 const loader = document.querySelector("#loader");
 
+localStorage.clear();
+
 // check if user has signed up before
 
 if (localStorage.getItem("firstName")) {
@@ -53,8 +55,11 @@ document.addEventListener("keyup", (event) => {
 });
 
 function nameCheck() {
-  const regEx = /^([a-zA-Z]{2,6})/;
-  return regEx.test(firstNameInput.value && lastNameInput.value);
+  const regEx = /^([a-zA-Z]{2,6})*$/;
+  if (regEx.test(firstNameInput.value) && regEx.test(lastNameInput.value)) {
+    return true;
+  }
+  return false;
 }
 
 function emailCheck() {
