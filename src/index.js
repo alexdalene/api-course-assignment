@@ -53,7 +53,7 @@ document.addEventListener("keyup", (event) => {
 });
 
 function nameCheck() {
-  const regEx = /^([a-zA-Z]{2,6})*$/;
+  const regEx = /^([a-zA-Z]{2,6})$/;
   if (regEx.test(firstNameInput.value) && regEx.test(lastNameInput.value)) {
     return true;
   }

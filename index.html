@@ -26,21 +26,25 @@
           <div id="name-container">
             <div>
               <label for="first-name-input">First name:</label>
-              <input type="text" id="first-name-input" />
+              <input type="text" id="first-name-input" placeholder="Ola" />
             </div>
             <div>
               <label for="last-name-input">Last name:</label>
-              <input type="text" id="last-name-input" />
+              <input type="text" id="last-name-input" placeholder=" Nordmann" />
             </div>
           </div>
           <div id="email-container">
             <div>
               <label for="email-input">Email:</label>
-              <input type="text" id="email-input" />
+              <input
+                type="text"
+                id="email-input"
+                placeholder="example@email.com"
+              />
             </div>
-            <div>
+            <div class="check-argument">
               <button type="submit" id="submit-button" disabled>
-                Sign Up
+                Submit
                 <div class="loading-form hide" id="loader">
                   <i class="fa-solid fa-spinner"></i>
                 </div>
